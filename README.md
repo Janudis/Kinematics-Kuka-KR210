@@ -56,9 +56,6 @@ first, lets determine the FK solution. From the urdf file, the relative position
 The following diagram was provided by the Udacity team to give helpful suggestions as to the origin placement and axes assignment for optimal homogeneous transformation matrices between reference frames.
 
 
-![alt text][image1]
-
-
 Using the above diagram and the urdf file, the DH parameter table can be filled in. In order to be verbose about my thought process, I'll outline one such parameter assignment process for the 1st joint.  
 
 - `a1` is the distance between `z1` and `z2` along the `x1` axis. `J1` rotates about the global `z` axis, which means `z1` is parallel to the global. `Z2` points along the global `y` axis, meaning the `x1` axis points along the global `x` axis, so `a1` corresponds to the `x` displacement between `j1`,`j2` on the urdf file, or .35m.
@@ -169,8 +166,6 @@ All that remains is to solve for the two remaining joint rotations `q2`,` q3`
 Once we have the angle `q1`, it becomes useful to think about the setup in terms of cylindrical coordinates to solve for `q2` and `q3` since `J2` and `J3` lie in the `θ` = `q1` plane.
 
 Below is a drawing of a sample arm orientation in the `z`, `theta = q1` plane
-
-![alt text][image2]
 
 
 Here `L1` represents the length from `J1` to `J3` along link 1, `L2` represents the length from `J3` to `J5`, and `r` is a vector pointing from `J2` to the wrist center at `J5`.  
