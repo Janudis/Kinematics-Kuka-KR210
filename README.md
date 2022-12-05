@@ -1,4 +1,4 @@
-# Pick and Place Challenge Writeup
+# Pick and Place Challenge 
 
 ---
 # Ευθύ Κινηματικό
